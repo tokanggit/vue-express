@@ -14,7 +14,7 @@ const dir = path.resolve(__dirname, '..');
 
 const options = {
   mode: env,
-  entry: `${dir}/src/index.js`,
+  entry: ['@babel/polyfill', `${dir}/src/index.js`],
   output: {
     path: `${dir}/dist`,
     publicPath: '/',
