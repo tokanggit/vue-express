@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use('/api', apiRoutes);
-app.use(express.static(path.resolve(__dirname, '..') + 'dist'));
+app.use(express.static(path.resolve(__dirname, '..') + '/dist'));
 
 if (env === 'development') {
   const webpack = require('webpack');
